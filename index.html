@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite - Confraternização SGP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f0;
+        }
+        .convite-container {
+            max-width: 800px;
+            margin: 40px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.25;
+            filter: brightness(1.1);
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.85);
+            text-align: center;
+        }
+        .titulo {
+            color: #00a4d6;
+            font-size: 36px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .texto {
+            color: #1a1716;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .destaque {
+            color: #1a1716;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+        .subtitulo {
+            color: #00a4d6;
+            font-size: 24px;
+            margin: 20px 0 10px 0;
+        }
+        .info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        .info-icon {
+            margin-right: 15px;
+            color: #00a4d6;
+            font-size: 24px;
+            width: 30px;
+        }
+        .info-text {
+            color: #1a1716;
+            font-size: 18px;
+            text-align: left;
+        }
+        .confirmacao {
+            color: #00a4d6;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .nota {
+            color: #1a1716;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .icone-festa {
+            font-size: 24px;
+            margin: 0 5px;
+            color: #00a4d6;
+        }
+        .form-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+        }
+        .btn-primary {
+            background-color: #00a4d6;
+            border-color: #00a4d6;
+        }
+        .btn-primary:hover {
+            background-color: #0082a8;
+            border-color: #0082a8;
+        }
+        .btn-outline-secondary {
+            color: #707173;
+            border-color: #707173;
+        }
+        .btn-outline-secondary:hover {
+            background-color: #707173;
+            color: white;
+        }
+        .success-message {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .admin-link {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #707173;
+        }
+        .admin-link a {
+            color: #00a4d6;
+            text-decoration: none;
+        }
+        .admin-link a:hover {
+            text-decoration: underline;
+        }
+        .info-box {
+            background-color: rgba(0, 164, 214, 0.1);
+            border-left: 4px solid #00a4d6;
+            padding: 15px;
+            margin: 25px 0;
+            text-align: left;
+            border-radius: 5px;
+        }
+        .info-box h5 {
+            color: #00a4d6;
+            margin-bottom: 10px;
+        }
+        .info-box ul {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+        .info-box li {
+            margin-bottom: 5px;
+        }
+        .price-tag {
+            display: inline-block;
+            background-color: #00a4d6;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="convite-container">
+        <img src="imagens/crepe.jpg" alt="Crepe com frutas" class="background-image">
+        <div class="content">
+            <div class="titulo">CONVITE PARA VOCÊ!</div>
+            
+            <div class="texto">
+                A Secretaria de Gestão de Pessoas do Conselho Nacional de Justiça tem o prazer de convidar você para nossa
+            </div>
+            
+            <div class="destaque">CONFRATERNIZAÇÃO SGP</div>
+            
+            <div class="subtitulo">Venha celebrar conosco! <span class="icone-festa">🎉</span></div>
+            
+            <div class="texto">
+                Será uma excelente oportunidade para compartilharmos momentos agradáveis e fortalecermos nossos laços profissionais.
+            </div>
+            
+            <div class="info">
+                <div class="info-icon">📅</div>
+                <div class="info-text"><strong>Quando?</strong> 23 de maio de 2025, às 16h</div>
+            </div>
+            
+            <div class="info">
+                <div class="info-icon">📍</div>
+                <div class="info-text"><strong>Onde?</strong> SQNW 108, Bloco "B", Noroeste, Brasília - DF</div>
+            </div>
+            
+            <div class="info-box">
+                <h5>Informações importantes:</h5>
+                <ul>
+                    <li>Valor por pessoa: <span class="price-tag">R$ 42,00</span></li>
+                    <li>Cardápio: <strong>Crepe no cone</strong></li>
+                    <li>Bebidas: Cada convidado deverá trazer sua bebida de preferência</li>
+                    <li>Você pode trazer familiares</li>
+                    <li>Crianças até 5 anos não pagam</li>
+                </ul>
+            </div>
+            
+            <div class="confirmacao">
+                Sua presença fará toda a diferença!
+            </div>
+            
+            <div class="form-section">
+                <h4>Confirme sua presença</h4>
+                <form id="rsvpForm">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="setor" class="form-label">Setor</label>
+                        <input type="text" class="form-control" id="setor" name="setor">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Você irá participar?</label>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-primary flex-grow-1" id="btnSim">Sim, irei participar</button>
+                            <button type="button" class="btn btn-outline-secondary flex-grow-1" id="btnNao">Não poderei participar</button>
+                        </div>
+                        <input type="hidden" id="confirmacao" name="confirmacao" value="">
+                    </div>
+                    <div class="mb-3" id="acompanhantesDiv" style="display: none;">
+                        <label for="acompanhantes" class="form-label">Número de acompanhantes</label>
+                        <input type="number" class="form-control" id="acompanhantes" name="acompanhantes" min="0" value="0">
+                        <small class="form-text text-muted">Informe quantas pessoas virão com você (não inclua você mesmo)</small>
+                    </div>
+                    <div class="mb-3" id="criancasDiv" style="display: none;">
+                        <label for="criancas" class="form-label">Crianças até 5 anos</label>
+                        <input type="number" class="form-control" id="criancas" name="criancas" min="0" value="0">
+                        <small class="form-text text-muted">Informe quantas crianças até 5 anos (não pagam)</small>
+                    </div>
+                    <div class="mb-3" id="observacoesDiv" style="display: none;">
+                        <label for="observacoes" class="form-label">Observações (opcional)</label>
+                        <textarea class="form-control" id="observacoes" name="observacoes" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" id="btnEnviar">Enviar confirmação</button>
+                </form>
+                <div class="success-message" id="successMessage">
+                    Sua resposta foi registrada com sucesso! Obrigado por confirmar.
+                </div>
+            </div>
+            
+            <div class="admin-link">
+                <a href="admin.html">Área do organizador</a> (acesso restrito)
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnSim = document.getElementById('btnSim');
+            const btnNao = document.getElementById('btnNao');
+            const confirmacao = document.getElementById('confirmacao');
+            const observacoesDiv = document.getElementById('observacoesDiv');
+            const acompanhantesDiv = document.getElementById('acompanhantesDiv');
+            const criancasDiv = document.getElementById('criancasDiv');
+            const rsvpForm = document.getElementById('rsvpForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            btnSim.addEventListener('click', function() {
+                btnSim.classList.add('btn-primary');
+                btnSim.classList.remove('btn-outline-secondary');
+                btnNao.classList.add('btn-outline-secondary');
+                btnNao.classList.remove('btn-primary');
+                confirmacao.value = 'sim';
+                observacoesDiv.style.display = 'block';
+                acompanhantesDiv.style.display = 'block';
+                criancasDiv.style.display = 'block';
+            });
+            
+            btnNao.addEventListener('click', function() {
+                btnNao.classList.add('btn-primary');
+                btnNao.classList.remove('btn-outline-secondary');
+                btnSim.classList.add('btn-outline-secondary');
+                btnSim.classList.remove('btn-primary');
+                confirmacao.value = 'nao';
+                observacoesDiv.style.display = 'block';
+                acompanhantesDiv.style.display = 'none';
+                criancasDiv.style.display = 'none';
+            });
+            
+            rsvpForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (confirmacao.value === '') {
+                    alert('Por favor, indique se irá participar ou não.');
+                    return;
+                }
+                
+                const formData = new FormData(rsvpForm);
+                const data = {
+                    nome: formData.get('nome'),
+                    setor: formData.get('setor'),
+                    confirmacao: formData.get('confirmacao'),
+                    acompanhantes: formData.get('acompanhantes') || '0',
+                    criancas: formData.get('criancas') || '0',
+                    observacoes: formData.get('observacoes'),
+                    dataHora: new Date().toISOString()
+                };
+                
+                // Salvar dados no localStorage (em uma aplicação real, seria enviado para um servidor)
+                let respostas = JSON.parse(localStorage.getItem('respostas') || '[]');
+                respostas.push(data);
+                localStorage.setItem('respostas', JSON.stringify(respostas));
+                
+                // Mostrar mensagem de sucesso
+                rsvpForm.style.display = 'none';
+                successMessage.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
